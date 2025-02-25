@@ -1,0 +1,54 @@
+{
+  "name": "hovhannisyan-dev/omnipay-nestpay",
+  "type": "library",
+  "description": "nestpay gateway for Omnipay payment processing library",
+  "keywords": [
+    "gateway",
+    "merchant",
+    "omnipay",
+    "pay",
+    "payment",
+    "nestpay",
+    "purchase"
+  ],
+  "homepage": "https://github.com/hovhannisyan-dev/omnipay-nestpay",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Armen Hovhannisyan",
+      "email": "armen.h.work@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "Omnipay\\NestPay\\": "src/"
+    }
+  },
+  "require": {
+    "omnipay/common": "^3",
+    "ext-json": "*",
+    "php": "^8.1",
+    "guzzlehttp/guzzle": "^7.8",
+    "php-http/guzzle7-adapter": "^1.0",
+    "ext-dom": "*",
+    "ext-simplexml": "*"
+  },
+  "require-dev": {
+    "omnipay/tests": "^4",
+    "http-interop/http-factory-guzzle": "^1.2",
+    "symfony/var-dumper": "^6.4",
+    "friendsofphp/php-cs-fixer": "^3.40"
+  },
+  "scripts": {
+    "style": [
+      "vendor/bin/php-cs-fixer fix --allow-risky=yes"
+    ]
+  },
+  "config": {
+    "allow-plugins": {
+      "php-http/discovery": true
+    }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
